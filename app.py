@@ -12,7 +12,7 @@ from io import StringIO
 
 # Page configuration
 st.set_page_config(
-    page_title="FitMaxx AI Planner",
+    page_title="FitMaxx AI",
     page_icon="💪",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -423,7 +423,7 @@ def generate_exercises(workout_type):
     return exercises_db.get(workout_type, ['Custom exercises based on your level'])
 
 # Main app layout
-st.markdown('<div class="main-header">💪 FitLife AI Planner</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header">💪 FitMax AI</div>', unsafe_allow_html=True)
 st.markdown(f'<div class="user-welcome">Welcome, {st.session_state.name}!</div>', unsafe_allow_html=True)
 
 # Sidebar - User Profile
@@ -690,5 +690,6 @@ else:
     - Regular health check-ups
     - Enjoy your food and stay hydrated
     """)
+
 
 
